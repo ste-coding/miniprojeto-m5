@@ -1,0 +1,75 @@
+.recycling-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.filter-buttons {
+    display: inline-block;
+}
+
+.btn-filtro {
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.points-container {
+    display: flex;
+    transition: transform 0.5s ease; 
+    width: calc(100% * 4);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.point-card {
+    flex: 0 0 25%;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
