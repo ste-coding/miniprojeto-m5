@@ -1,0 +1,84 @@
+{
+  "recyclingPoints": [
+    {
+      "id": "b41f2d65-c610-4c0a-9beb-0dd391e06b13",
+      "name": "Ponto de Coleta A",
+      "city": "Recife",
+      "type": "baterias",
+      "street_address": "Rua do Apolo, 225",
+      "contact": "(81) 99999-9999"
+    },
+    {
+      "id": "7c4ba4ec-3d00-4cf0-94a9-32dd99010965",
+      "name": "Ponto de Coleta B",
+      "city": "São Paulo",
+      "type": "computadores",
+      "street_address": "Avenida Paulista, 1578",
+      "contact": "(11) 98887-8888"
+    },
+    {
+      "id": "e55603c7-ba8e-4a25-9dd9-fb0727d7ba3c",
+      "name": "Ponto de Coleta C",
+      "city": "Recife",
+      "type": "celulares",
+      "street_address": "Rua da Aurora, 123",
+      "contact": "(81) 97777-7777"
+    },
+    {
+      "id": "d5c55b39-47ae-4400-9a5d-4fd183465e44",
+      "name": "Ponto de Coleta D",
+      "city": "Rio de Janeiro",
+      "type": "televisores",
+      "street_address": "Rua do Ouvidor, 50",
+      "contact": "(21) 96666-6666"
+    },
+    {
+      "id": "c9c64243-a90d-44c4-bd60-4a19aaf03ba8",
+      "name": "Ponto de Coleta E",
+      "city": "Salvador",
+      "type": "baterias",
+      "street_address": "Avenida Tancredo Neves, 620",
+      "contact": "(71) 94444-4444"
+    },
+    {
+      "id": "cf25b146-78bc-4325-b273-e95d0af531ef",
+      "name": "Ponto de Coleta F",
+      "city": "Brasília",
+      "type": "computadores",
+      "street_address": "Quadra 202 Norte, Bloco B",
+      "contact": "(61) 92222-2222"
+    },
+    {
+      "id": "8bcb39ee-60c5-4052-b63c-41a0c415b6e5",
+      "name": "Ponto de Coleta G",
+      "city": "Fortaleza",
+      "type": "celulares",
+      "street_address": "Avenida Dom Luís, 300",
+      "contact": "(85) 91111-1111"
+    },
+    {
+      "id": "8c7ed648-5419-499a-9d88-63f825fd912b",
+      "name": "Ponto de Coleta H",
+      "city": "Belém",
+      "type": "televisores",
+      "street_address": "Travessa Rui Barbosa, 1200",
+      "contact": "(91) 93333-3333"
+    },
+    {
+      "id": "a38fc932-70e9-4804-b0b5-2dc96c4d590a",
+      "name": "Ponto de Coleta I",
+      "city": "Curitiba",
+      "type": "baterias",
+      "street_address": "Rua XV de Novembro, 1500",
+      "contact": "(41) 95555-5555"
+    },
+    {
+      "id": "04dbdd65-5556-4e6e-b710-f5244ac2b656",
+      "name": "Ponto de Coleta J",
+      "city": "Porto Alegre",
+      "type": "computadores",
+      "street_address": "Avenida Borges de Medeiros, 1234",
+      "contact": "(51) 96666-6666"
+    }
+  ]
+}

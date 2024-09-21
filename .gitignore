@@ -1,0 +1,12 @@
+# Arquivos a serem ignorados
+todo.md
+
+# Diretório de dependências Node.js
+api/node_modules/
+
+client/node_modules/
+
+#scripts
+scripts/
+
+
