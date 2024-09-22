@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #191818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-left a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.header-left a:hover {
+    color: #CCE664;
+}
+
+.btn-documentation {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-documentation:hover {
+    background-color: #CCE664;
+    border: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.mobile-menu a,
+.mobile-menu .btn-documentation {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.mobile-menu a:hover,
+.mobile-menu .btn-documentation:hover {
+    background-color: #444;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-left {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .btn-documentation {
+        display: none;
+    }
+
+}
