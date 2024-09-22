@@ -25,8 +25,9 @@
 .icon-right {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center; 
+    padding-left: 10px;
     transition: transform 0.3s ease;
 }
 
