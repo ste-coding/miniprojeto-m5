@@ -1,4 +1,3 @@
-// src/components/RecyclingPoints/AllPoints.jsx
 import React, { useEffect, useState } from 'react';
 import { getRecyclingPoints } from '../../services/api';
 import RecyclingPointsList from './RecyclingPointsList';
@@ -14,7 +13,7 @@ const AllPoints = ({ handleCardClick, updateFilteredPoints }) => {
             try {
                 const data = await getRecyclingPoints();
                 setPoints(data);
-                updateFilteredPoints(data); // Atualiza a contagem de pontos
+                updateFilteredPoints(data);
             } catch (err) {
                 setError(err.message);
             } finally {

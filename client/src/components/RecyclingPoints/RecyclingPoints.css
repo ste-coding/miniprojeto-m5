@@ -3,8 +3,52 @@
     text-align: center;
 }
 
+.recycling-section h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-family: "Fira Code", monospace;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    z-index: 1;
+}
+
 .filter-section {
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-section input{
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #CCE664;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+.filter-section input:focus {
+    border-color: #191818;
+    outline: none;
+}
+
+.filter-section button {
+    padding: 10px 20px;
+    background-color: #CCE664;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #191818;
 }
 
 .search-bar {
@@ -16,7 +60,6 @@
 .filter-buttons {
     display: inline-block;
 }
-
 
 .btn-filtro {
     padding: 10px 15px;
@@ -32,6 +75,7 @@
 .btn-filtro:hover {
     background-color: #191818;
 }
+
 .popup {
     position: fixed;
     top: 0;
@@ -54,38 +98,84 @@
 
 .points-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     transition: transform 0.5s ease; 
     overflow-x: auto;
     scroll-behavior: smooth;
 }
 
 .point-card {
-    flex: 0 0 22%;
+    flex: 0 0 28%;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
     cursor: pointer;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    min-width: 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.card-content {
+    margin-bottom: 40px;
+}
+
+.point-card h3 {
+    font-size: 24px;
+    color: #CCE664;
+}
+
+.card-content {
+    margin-bottom: 40px;
+}
+
+.icon-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: transparent;
+    border: 2px solid #CCE664;
+    border-radius: 50%;
+    color: #CCE664;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button:hover {
+    background-color: #CCE664;
+    color: white;
 }
 
 .wrapper{
     max-width: 1100px;
     width: 100%;
     margin-top: 130px;
-    transform: translateY(-50%);
-    margin-left: 80px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
-.carousel{
+.carousel {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% /4)-12px);
     gap: 16px;
     overflow: hidden;
 }
@@ -109,8 +199,26 @@
 
 }
 
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
 
-.pages__home__genres__tiles {
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.tiles {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -119,7 +227,7 @@
     align-items: center;
 }
 
-.pages__home__genres__tile {
+.tile {
     background-color: #CCE664;
     color: white;
     padding: 10px;
@@ -134,7 +242,7 @@
     justify-content: center;
 }
 
-.pages__home__genres__tile:hover {
+.tile:hover {
     background-color: #191919;
 }
 
@@ -185,6 +293,8 @@
 
     .point-card {
         max-width: 100%;
+        flex: 1 1 calc(50% - 20px); /* 2 cards por linha*/
+        max-width: none;
     }
 }
 
@@ -194,9 +304,24 @@
         margin-bottom: 10px;
     }
 
+    .point-card {
+        flex: 1 1 100%; /* 1 card por linha*/
+        max-width: none;
+    }
+
+    .filter-section input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .filter-section button {
+        width: 100%;
+    }
+
     .filter-buttons {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .btn-filtro {

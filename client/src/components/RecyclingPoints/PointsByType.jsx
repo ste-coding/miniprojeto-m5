@@ -1,4 +1,3 @@
-// src/components/RecyclingPoints/PointsByType.jsx
 import React, { useEffect, useState } from 'react';
 import { getRecyclingPointsByType } from '../../services/api';
 import RecyclingPointsList from './RecyclingPointsList';
@@ -14,7 +13,7 @@ const PointsByType = ({ type, handleCardClick, updateFilteredPoints }) => {
             if (!type.trim()) {
                 setPoints([]);
                 setLoading(false);
-                updateFilteredPoints([]); // Limpa os pontos filtrados
+                updateFilteredPoints([]);
                 return;
             }
 

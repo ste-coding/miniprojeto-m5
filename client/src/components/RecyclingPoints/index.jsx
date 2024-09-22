@@ -1,4 +1,3 @@
-// src/components/RecyclingPoints/index.jsx
 import React, { useRef, useState } from 'react';
 import AllPoints from './AllPoints';
 import PointsByCity from './PointsByCity';
@@ -7,7 +6,7 @@ import './RecyclingPoints.css';
 
 const RecyclingPoints = () => {
     const scrollRef = useRef(null);
-    const [viewMode, setViewMode] = useState('all'); // 'all', 'city', 'filtered-city', 'type', 'filtered-type'
+    const [viewMode, setViewMode] = useState('all');
     const [pointsCount, setPointsCount] = useState(0);
     const [selectedPoint, setSelectedPoint] = useState(null);
 
@@ -57,21 +56,21 @@ const RecyclingPoints = () => {
             <h2>Pontos de Coleta</h2>
             <p>Total de pontos encontrados: {pointsCount}</p>
 
-            <div className="pages__home__genres__tiles">
+            <div className="tiles">
                 <a 
-                    className="pages__home__genres__tile" 
+                    className="tile" 
                     onClick={() => handleResetFilters()}
                 >
                     Ver Todos
                 </a>
                 <a 
-                    className="pages__home__genres__tile" 
+                    className="tile" 
                     onClick={() => setViewMode('city')}
                 >
                     Filtrar por Cidade
                 </a>
                 <a 
-                    className="pages__home__genres__tile" 
+                    className="tile" 
                     onClick={() => setViewMode('type')}
                 >
                     Filtrar por Tipo

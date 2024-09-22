@@ -1,4 +1,3 @@
-// src/components/RecyclingPoints/PointsByCity.jsx
 import React, { useEffect, useState } from 'react';
 import { getRecyclingPointsByCity } from '../../services/api';
 import RecyclingPointsList from './RecyclingPointsList';
@@ -14,7 +13,7 @@ const PointsByCity = ({ city, handleCardClick, updateFilteredPoints }) => {
             if (!city.trim()) {
                 setPoints([]);
                 setLoading(false);
-                updateFilteredPoints([]); // Limpa os pontos filtrados
+                updateFilteredPoints([]);
                 return;
             }
 
