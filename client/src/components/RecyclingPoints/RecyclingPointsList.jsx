@@ -1,48 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { getRecyclingPoints } from '../../services/api';
+import React, { useState } from 'react';
 import './RecyclingPoints.css';
 
-const RecyclingPointsList = () => {
-    const [points, setPoints] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+const RecyclingPointsList = ({ points, handleCardClick }) => {
     const [selectedPoint, setSelectedPoint] = useState(null);
 
-
-    useEffect(() => {
-        const fetchPoints = async () => {
-            try {
-                const data = await getRecyclingPoints();
-                setPoints(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchPoints();
-    }, []);
-
-    const handleCardClick = (point) => {
+    const openPopup = (point) => {
         setSelectedPoint(point);
+        handleCardClick(point);
     };
 
     const closePopup = () => {
         setSelectedPoint(null);
     };
 
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+    
+
+    if (!points || points.length === 0) {
+        return <div>Nenhum ponto de coleta encontrado.</div>;
+    }
 
     return (
         <>
             <div className="points-container">
                 {points.map(point => (
-                    <div key={point.id} className="point-card" onClick={() => handleCardClick(point)}>
+                    <div key={point.id} className="point-card" onClick={() => openPopup(point)}>
                         <h3>{point.name}</h3>
-                        <p>{point.city}</p>
-                        <p>{point.contact}</p>
+                        <p><strong>Cidade:</strong> {point.city}</p>
+                        <p><strong>Contato:</strong> {point.contact}</p>
                         <button>+</button>
                     </div>
                 ))}
