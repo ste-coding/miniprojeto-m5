@@ -23,6 +23,7 @@ eWaste é uma plataforma desenvolvida para facilitar a localização de pontos d
 - **Vite**: ^5.4.1
 - **Node.js**: ^20.11.0
 - **Express**: ^4.19.2
+- **Axios**: ^1.7.7
 - **ScrollReveal**: ^4.0.9
 
 ## Estrutura Geral do Projeto
