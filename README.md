@@ -1,23 +1,29 @@
 # eWaste: miniprojeto do módulo 5
 
-eWaste é uma plataforma que facilita a localização do ponto de descarte mais próximo para lixo eletrônico. Desenvolvida com React, esta landing page foi projetada para promover a sustentabilidade e incentivar a prática do descarte responsável.
+eWaste é uma plataforma desenvolvida para facilitar a localização de pontos de descarte de lixo eletrônico, promovendo a conscientização ambiental e a sustentabilidade. Este projeto tem como objetivo ajudar os usuários a encontrar a melhor forma de descartar seus dispositivos eletrônicos de maneira responsável.
+
+![Screenshot do Projeto](.//client/public/screenshot.png)
+
 
 ## Sumário
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Estrutura do Projeto](#estrutura-geral-do-projeto)
 - [Instruções de Instalação](#instruções-de-instalação)
 - [Como Iniciar o Projeto](#como-iniciar-o-projeto)
-- [Arquivos e Estruturas](#arquivos-e-estruturas)
+- [Funcionalidades](#funcionalidades)
+- [Links Importantes](#links-importantes)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
 
+
 ## Tecnologias Utilizadas
 
-- React
-- Vite
-- Node.js
-- Express
+- **React**: ^18.3.1
+- **Vite**: ^5.4.1
+- **Node.js**: ^20.11.0
+- **Express**: ^4.19.2
+- **ScrollReveal**: ^4.0.9
 
 ## Estrutura Geral do Projeto
 
@@ -44,25 +50,26 @@ eWaste é uma plataforma que facilita a localização do ponto de descarte mais 
 └── README.md        # Documentação do projeto
 ```
 
+
 ## Instruções de Instalação
 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/ste-coding/miniprojeto-m5.git
    ```
 
 2. Navegue até a pasta do cliente e instale as dependências:
 
    ```bash
-   cd projeto/client
+   cd client
    npm install
    ```
 
 3. Navegue até a pasta da API e instale as dependências:
 
    ```bash
-   cd ../api
+   cd api
    npm install
    ```
 
@@ -75,7 +82,7 @@ Navegue até a pasta `client` e execute:
 ```bash
 npm run dev
 ```
-Acesse o local host
+Abra o link gerado em seu navegador.
 
 ### Para iniciar a API
 
@@ -87,14 +94,26 @@ npm start
 
 ## Funcionalidades
 
-### About Component
+### About
 
-O componente `About` utiliza `ScrollReveal` para criar animações de revelação ao rolar a página. Ele apresenta informações sobre a plataforma e inclui uma imagem.
+O componente `About` utiliza a biblioteca `ScrollReveal` para criar animações ao rolar a página. Ele apresenta a missão da plataforma e inclui uma imagem que destaca a importância do descarte responsável.
 
-### RecyclingPoints Component
+### RecyclingPoints
 
-O componente `RecyclingPoints` permite que os usuários visualizem pontos de coleta de lixo eletrônico. Ele oferece opções para filtrar por cidade ou tipo e exibe informações detalhadas em um pop-up ao clicar em um ponto.
+O componente `RecyclingPoints` permite aos usuários visualizar os pontos de coleta de lixo eletrônico, filtrando por cidade ou tipo de ponto. Informações detalhadas são apresentadas em um pop-up ao clicar em um ponto, facilitando a escolha do local adequado para descarte.
 
+
+## Links Importantes
+A API utilizada neste projeto pode ser acessada [neste repositório](https://github.com/seu-usuario/repo-api).
+
+
+Veja a postagem de apresentação no LinkedIn [neste link](https://www.linkedin.com/posts/stephanie-candido_github-ste-codingminiprojeto-m5-activity-7244000767857070080-G9x-?utm_source=share&utm_medium=member_desktop). 
+
+## Tópicos
+
+- #Sustentabilidade
+- #API
+- #React
 
 ## Contribuição
 
@@ -103,3 +122,4 @@ Sinta-se à vontade para contribuir! Abra um _pull request_ ou envie um _issue_ 
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
