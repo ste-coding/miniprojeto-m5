@@ -16,7 +16,7 @@ const Header = () => {
                 <a href="#contact">Contato</a>
             </div>
             <div className="header-right">
-                <button className="btn-documentation" onClick={() => window.location.href='#documentation'}>
+                <button className="btn-documentation" onClick={() => window.open('https://github.com/ste-coding/miniprojeto-m5', '_blank', 'noopener,noreferrer')}>
                     Documentação
                 </button>
                 <div className="menu-icon" onClick={toggleMenu}>
